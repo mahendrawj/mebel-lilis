@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Fee;
 class Product extends Model
 {
-    protected $fillable = ['name', 'photo', 'model', 'price', 'weight'];
+    protected $fillable = ['name', 'photo', 'model', 'price', 'weight','description'];
 
     protected $appends = ['photo_path'];
 

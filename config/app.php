@@ -158,6 +158,8 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         rizalafani\rajaongkirlaravel\RajaOngkirServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
+       
     ],
 
     /*
@@ -208,6 +210,7 @@ return [
         'Flash'     => Laracasts\Flash\Flash::class,
         'RajaOngkir' => rizalafani\rajaongkirlaravel\RajaOngkirFacade::class,
         'Input' => Illuminate\Support\Facades\Input::class,
+        
     ],
 
 ];

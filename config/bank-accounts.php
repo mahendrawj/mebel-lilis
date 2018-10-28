@@ -3,25 +3,25 @@ return [
     'bca' => [
         'title' => 'BCA',
         'bank' => 'BCA',
-        'name' => 'PT Reselia',
+        'name' => 'Mebel Lilis',
         'number' => '45454545'
     ],
     'bni' => [
         'title' => 'BNI',
         'bank' => 'BNI',
-        'name' => 'PT Reselia',
+        'name' => 'Mebel Lilis',
         'number' => '787687678'
     ],
     'mandiri' => [
         'title' => 'Mandiri',
         'bank' => 'Mandiri',
-        'name' => 'PT Reselia',
+        'name' => 'Mebel Lilis',
         'number' => '23223232'
     ],
     'atm-bersama' => [
         'title' => 'ATM Bersama',
         'bank' => 'Mandiri',
-        'name' => 'PT Reselia',
+        'name' => 'Mebel Lilis',
         'number' => '23223232'
     ],
 ];

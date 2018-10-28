@@ -10,3 +10,4 @@
     @endforeach
   </div>
 </div>
+<img src="{{asset('img/Banner.jpg')}}" class="rounded">

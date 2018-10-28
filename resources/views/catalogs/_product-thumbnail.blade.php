@@ -1,6 +1,8 @@
-<h3>{{ $product->name }}</h3>
-<div class="thumbnail">
-  <img src="{{ $product->photo_path }}" class="img-rounded">
+<h3>
+  <a href="{{ url('/') }}/catalogs/viewproduct?id={{$product->id}}">{{ $product->name }}</a></h3>
+  <div class="col-md-12">
+  <div class="thumbnail">
+  <img src="{{ $product->photo_path }}" class="img-rounded" width="250px" width="100px">
     <p>Model: {{ $product->model }}</p>
     <p>Harga: <strong>Rp{{ number_format($product->price, 2) }}</strong></p>
     <p>Category:
@@ -10,7 +12,6 @@
         {{ $category->title }}</span>
       @endforeach
     </p>
-
-    @include('layouts._customer-feature', ['partial_view'=>'catalogs._add-product-form', 'data' => compact('product')])
-
+        @include('layouts._customer-feature', ['partial_view'=>'catalogs._add-product-form', 'data' => compact('product')])
 </div>
+  </div>

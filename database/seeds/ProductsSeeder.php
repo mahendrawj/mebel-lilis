@@ -37,18 +37,21 @@ class ProductsSeeder extends Seeder
             'model' => 'Sepatu Pria',
             'photo'=>'stub-shoe.jpg',
             'weight' => rand(1,3) * 1000,
+            'description' => '',
             'price' => 340000]);
         $sepatu2 = Product::create([
             'name' => 'Nike Air Max',
             'model' => 'Sepatu Wanita',
             'photo'=>'stub-shoe.jpg',
             'weight' => rand(1,3) * 1000,
+            'description' => '',
             'price' => 420000]);
         $sepatu3 = Product::create([
             'name' => 'Nike Air Zoom',
             'model' => 'Sepatu Wanita',
             'photo'=>'stub-shoe.jpg',
             'weight' => rand(1,3) * 1000,
+            'description' => '',
             'price' => 360000]);
         $running->products()->saveMany([$sepatu1, $sepatu2, $sepatu3]);
         $lifestyle->products()->saveMany([$sepatu1, $sepatu2]);
@@ -60,18 +63,21 @@ class ProductsSeeder extends Seeder
             'model' => 'Jaket Wanita',
             'photo'=>'stub-jacket.jpg',
             'weight' => rand(1,3) * 1000,
+            'description' => '',
             'price' => 720000]);
         $jacket2 = Product::create([
             'name' => 'Nike Guild 550',
             'model' => 'Jaket Pria',
             'photo'=>'stub-jacket.jpg',
             'weight' => rand(1,3) * 1000,
+            'description' => '',
             'price' => 380000]);
         $jacket3 = Product::create([
             'name' => 'Nike SB Steele',
             'model' => 'Jaket Pria',
             'photo'=>'stub-jacket.jpg',
             'weight' => rand(1,3) * 1000,
+            'description' => '',
             'price' => 1200000]);
         $jacket->products()->saveMany([$jacket1, $jacket3]);
         $vest->products()->saveMany([$jacket2, $jacket3]);

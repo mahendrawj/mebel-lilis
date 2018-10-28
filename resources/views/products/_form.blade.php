@@ -11,7 +11,7 @@
 </div>
 
 <div class="form-group {!! $errors->has('weight') ? 'has-error' : '' !!}">
-  {!! Form::label('weight', 'Berat (gram)') !!}
+  {!! Form::label('weight', 'Berat (KG)') !!}
   {!! Form::number('weight', null, ['class'=>'form-control']) !!}
   {!! $errors->first('weight', '<p class="help-block">:message</p>') !!}
 </div>
@@ -45,6 +45,11 @@
     </div>
   </div>
   @endif
+  <div class="form-group {!! $errors->has('description') ? 'has-error' : '' !!}">
+      {!! Form::label('description', 'Description') !!}
+      {!! Form::text('description', null, ['class'=>'form-control']) !!}
+      {!! $errors->first('description', '<p class="help-block">:message</p>') !!}
+    </div>
 </div>
 
 {!! Form::submit(isset($model) ? 'Update' : 'Save', ['class'=>'btn btn-primary']) !!}
